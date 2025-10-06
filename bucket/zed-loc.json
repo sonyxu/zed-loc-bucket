@@ -18,12 +18,12 @@
     ],
     "checkver": {
         "url": "https://api.github.com/repos/TC999/zed-loc/releases",
-        "regex": "\"(?<version>v\\d+\\.\\d+\\.\\d+)\""
+        "regex": "\"v(?<version>\\d+\\.\\d+\\.\\d+)\""
     },
     "autoupdate": {
-        "url": "https://github.com/TC999/zed-loc/releases/download/$version/zed-windows.zip",
+        "url": "https://github.com/TC999/zed-loc/releases/download/v$version/zed-windows.zip",
         "hash": {
-            "url": "https://github.com/TC999/zed-loc/releases/download/$version/sha256sums.txt"
+            "url": "https://github.com/TC999/zed-loc/releases/download/v$version/sha256sums.txt"
         }
     }
 }
